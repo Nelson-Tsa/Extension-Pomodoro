@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Buddy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <button id="activer-lecteur">Mode Lecture</button>
+  <button id="createFloatingDiv">Afficher la div flottante</button>
+  <h1>ADA STUDENT BUDDY 🍅</h1>
+
+  <div id="timer-display">Prêt à travailler !</div>
+  <button id="start">Démarrer Pomodoro</button>
+  <button id="pause" disabled>Stop</button>
+  <button id="reset">Réinitialiser</button>
+
+  <h1>Ma Todo List</h1>
+  <input id="taskInput" type="text" placeholder="Nouvelle tâche...">
+  <button id="addBtn">Ajouter</button>
+        <ul id="taskList">
+          <li class="task-item">
+            <div class="task-content">
+              <span class="task-text">cccc</span>
+              <div class="task-buttons">
+                <button>✔️</button>
+                <button>❌</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+   
+  <script defer src="todoList.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

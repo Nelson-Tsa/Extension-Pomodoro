@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "PomodoroStudy",
+    "version": "1.0",
+    "author" : "Nelson & Alix",
+    "description": "Extension Chrome combinant un minuteur Pomodoro, todo list et mode de lecture sans distraction",
+
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "notifications",
+      "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "image/pomodoroIcon.png",
+          "48": "image/pomodoroIcon.png",
+          "128": "image/pomodoroIcon.png"
+      }
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ],
+     
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+        {
+            "resources": ["content.js", "todoList.js", "popup.css"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "icons": {
+        "16": "image/pomodoroIcon.png",
+        "48": "image/pomodoroIcon.png",
+        "128": "image/pomodoroIcon.png"
+    }
+}
+  
