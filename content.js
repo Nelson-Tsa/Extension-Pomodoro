@@ -148,6 +148,7 @@ if (!document.getElementById('floatingContainer')) {
                 margin-bottom: 10px;
                 color: #E74C34;
                 letter-spacing: 1px;
+                margin-top: 20px;
             }
 
             /* Style pour la liste */
